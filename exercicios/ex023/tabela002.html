@@ -12,6 +12,7 @@
         }
         table{
             border-collapse: collapse;
+            width: 400px;
         }
         td,th{
             border: 1px solid black;
@@ -27,10 +28,12 @@
     <h1>Tabelas grandes</h1>
 
     <Table>
+
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -49,7 +52,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td><strong>84.352.783</strong></td>
             </tr>
         </tfoot>
